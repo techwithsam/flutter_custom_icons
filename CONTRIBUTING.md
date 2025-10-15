@@ -18,7 +18,7 @@ Thank you for considering contributing to Flutter Custom Icons! 🎉
 
 3. **Generate the Font**
    ```bash
-   node tools/generate_icons.js
+   node tool/generate_icons.js
    ```
 
 4. **Test Your Icons**

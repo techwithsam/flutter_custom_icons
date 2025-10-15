@@ -1,5 +1,5 @@
-library flutter_custom_icons;
+library;
 
 export 'src/iconixto_icons.dart';
 
-// node tools/generate_icons.js
+// node tool/generate_icons.js

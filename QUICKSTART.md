@@ -24,7 +24,7 @@ Place your SVG files in `assets/icons/`. Example sources:
 ### Step 2: Generate Font & Dart Class
 Run the automation script:
 ```bash
-node tools/generate_icons.js
+node tool/generate_icons.js
 ```
 
 This will:
@@ -68,4 +68,4 @@ When you add new icons:
 
 **Problem:** Icon name conflicts
 - Rename SVG files to avoid duplicate names
-- Regenerate with `node tools/generate_icons.js`
+- Regenerate with `node tool/generate_icons.js`

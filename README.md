@@ -84,7 +84,7 @@ See the [example](example/) folder for a complete demo.
 2. **Run the generation script**:
 
 ```bash
-node tools/generate_icons.js
+node tool/generate_icons.js
 ```
 
 3. **Test the icons** in the example app
@@ -109,7 +109,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 1. Fork the repository
 2. Add your SVG icons to `assets/icons/`
-3. Run `node tools/generate_icons.js`
+3. Run `node tool/generate_icons.js`
 4. Submit a PR with your additions
 
 ## License

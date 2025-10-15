@@ -67,14 +67,14 @@ IconButton(
 ```bash
 # 1. Add SVG files to assets/icons/
 # 2. Run the generation script:
-node tools/generate_icons.js
+node tool/generate_icons.js
 
 # That's it! Your new icons are ready to use.
 ```
 
 ### 🛠️ Automation Script Features
 
-The `tools/generate_icons.js` script:
+The `tool/generate_icons.js` script:
 - ✅ Scans all SVG files in `assets/icons/`
 - ✅ Converts them to a single `.ttf` font using Fantasticon
 - ✅ Auto-generates the Dart class with icon constants
@@ -100,7 +100,7 @@ All 3 tests are passing:
 
 #### For Development:
 1. **Add more icons**: Place SVG files in `assets/icons/`
-2. **Run script**: `node tools/generate_icons.js`
+2. **Run script**: `node tool/generate_icons.js`
 3. **Test**: `flutter test`
 4. **Demo**: Run the example app to preview icons
 
