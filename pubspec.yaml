@@ -1,7 +1,9 @@
 name: flutter_custom_icons
 description: "Curated free SVG icons as a lightweight Flutter font pack—scalable, themeable, zero bloat."
 version: 0.0.1
-homepage: https://github.com/techwithsam/flutter_custom_icons
+homepage: https://github.com/techwithsam
+repository: https://github.com/techwithsam/flutter_custom_icons
+issue_tracker: https://github.com/techwithsam/flutter_custom_icons/issues
 
 environment:
   sdk: ^3.8.1
@@ -16,7 +18,10 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^5.0.0
 
-
-# flutter:
+flutter:
+  fonts:
+    - family: iconixto
+      fonts:
+        - asset: assets/fonts/iconixto.ttf
 
 
