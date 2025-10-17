@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.0.2
+
+* Enhanced documentation with comprehensive updates
+* Added Icon Gallery section showcasing sample icons from both families
+* Updated all documentation to reflect dual icon family API (Iconixto + FeatherIcons)
+* Corrected file paths and class names in QUICKSTART guide
+* Improved README with visual icon previews and better usage examples
+* Fixed markdown formatting issues for better readability
+* Added white color styling to icon previews for better visibility
+
 ## 0.0.1
 
 * Initial release of Flutter Custom Icons
