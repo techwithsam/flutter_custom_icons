@@ -34,37 +34,96 @@ class MyHomePage extends StatelessWidget {
         title: Text(title),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'Available Custom Icons:',
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-            ),
-            const SizedBox(height: 30),
-            // Display icons in a grid
-            Expanded(
-              child: GridView.count(
-                crossAxisCount: 4,
-                padding: const EdgeInsets.all(20),
-                mainAxisSpacing: 20,
-                crossAxisSpacing: 20,
-                children: [
-                  _buildIconCard(context, Iconixto.home, 'home'),
-                  _buildIconCard(context, Iconixto.home2, 'home2'),
-                  _buildIconCard(context, Iconixto.home3, 'home3'),
-                  _buildIconCard(context, Iconixto.home4, 'home4'),
-                  _buildIconCard(context, Iconixto.link, 'link'),
-                  _buildIconCard(context, Iconixto.link1, 'link1'),
-                  _buildIconCard(context, Iconixto.link2, 'link2'),
-                  _buildIconCard(context, Iconixto.link3, 'link3'),
-                  _buildIconCard(context, Iconixto.cog1, 'cog1'),
-                  _buildIconCard(context, Iconixto.cog2, 'cog2'),
-                  _buildIconCard(context, Iconixto.zoomPlus, 'zoomPlus'),
-                ],
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              const Text(
+                'Iconixto Icons:',
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
-            ),
-          ],
+              const SizedBox(height: 30),
+              // Display icons in a grid
+              Expanded(
+                child: GridView.count(
+                  crossAxisCount: 4,
+                  padding: const EdgeInsets.all(20),
+                  mainAxisSpacing: 20,
+                  crossAxisSpacing: 20,
+                  children: [
+                    _buildIconCard(context, Iconixto.home, 'home'),
+                    _buildIconCard(context, Iconixto.home2, 'home2'),
+                    _buildIconCard(context, Iconixto.home3, 'home3'),
+                    _buildIconCard(context, Iconixto.home4, 'home4'),
+                    _buildIconCard(context, Iconixto.link, 'link'),
+                    _buildIconCard(context, Iconixto.link1, 'link1'),
+                    _buildIconCard(context, Iconixto.link2, 'link2'),
+                    _buildIconCard(context, Iconixto.link3, 'link3'),
+                    _buildIconCard(context, Iconixto.cog1, 'cog1'),
+                    _buildIconCard(context, Iconixto.cog2, 'cog2'),
+                    _buildIconCard(context, Iconixto.zoomPlus, 'zoomPlus'),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 30),
+              const Text(
+                'Feather Icons:',
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(height: 30),
+              // Display icons in a grid
+              Expanded(
+                child: GridView.count(
+                  crossAxisCount: 4,
+                  padding: const EdgeInsets.all(20),
+                  mainAxisSpacing: 20,
+                  crossAxisSpacing: 20,
+                  children: [
+                    _buildIconCard(context, FeatherIcons.activity, 'activity'),
+                    _buildIconCard(context, FeatherIcons.airplay, 'airplay'),
+                    _buildIconCard(
+                      context,
+                      FeatherIcons.alertCircle,
+                      'alertCircle',
+                    ),
+                    _buildIconCard(
+                      context,
+                      FeatherIcons.alertOctagon,
+                      'alertOctagon',
+                    ),
+                    _buildIconCard(
+                      context,
+                      FeatherIcons.alertTriangle,
+                      'alertTriangle',
+                    ),
+                    _buildIconCard(
+                      context,
+                      FeatherIcons.alignCenter,
+                      'alignCenter',
+                    ),
+                    _buildIconCard(
+                      context,
+                      FeatherIcons.alignJustify,
+                      'alignJustify',
+                    ),
+                    _buildIconCard(
+                      context,
+                      FeatherIcons.alignLeft,
+                      'alignLeft',
+                    ),
+                    _buildIconCard(
+                      context,
+                      FeatherIcons.alignRight,
+                      'alignRight',
+                    ),
+                    _buildIconCard(context, FeatherIcons.anchor, 'anchor'),
+                    _buildIconCard(context, FeatherIcons.aperture, 'aperture'),
+                    _buildIconCard(context, FeatherIcons.archive, 'archive'),
+                  ],
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

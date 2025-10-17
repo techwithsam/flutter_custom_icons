@@ -23,5 +23,8 @@ flutter:
     - family: iconixto
       fonts:
         - asset: assets/fonts/iconixto.ttf
+    - family: feathericons
+      fonts:
+        - asset: assets/fonts/feathericons.ttf
 
 

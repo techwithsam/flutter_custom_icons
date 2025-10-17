@@ -9,22 +9,25 @@ import 'package:flutter/material.dart';
 import 'package:flutter_custom_icons/flutter_custom_icons.dart';
 
 // Basic usage
-Icon(FlutterCustomIcons.home)
+Icon(Iconixto.home)
 
 // With size and color
 Icon(
-  FlutterCustomIcons.link,
+  Iconixto.link,
   size: 30,
   color: Colors.blue,
 )
 
 // In a button
 IconButton(
-  icon: Icon(FlutterCustomIcons.cog_1),
+  icon: Icon(Iconixto.cog1),
   onPressed: () {
     // Handle tap
   },
 )
+
+// Feather icons
+Icon(FeatherIcons.activity)
 ```
 
 ## Running the Example
@@ -36,17 +39,7 @@ flutter run
 
 ## Available Icons
 
-All generated icons are available as static constants in the `FlutterCustomIcons` class:
+Browse available icons via autocomplete on:
 
-- `FlutterCustomIcons.home`
-- `FlutterCustomIcons.home_1`
-- `FlutterCustomIcons.home_2`
-- `FlutterCustomIcons.home_3`
-- `FlutterCustomIcons.home_4`
-- `FlutterCustomIcons.link`
-- `FlutterCustomIcons.link_1`
-- `FlutterCustomIcons.link_2`
-- `FlutterCustomIcons.link_3`
-- `FlutterCustomIcons.cog_1`
-- `FlutterCustomIcons.cog_2`
-- `FlutterCustomIcons.zoom_plus`
+- `Iconixto.` (custom curated set)
+- `FeatherIcons.` (Feather icon set)

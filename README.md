@@ -1,19 +1,24 @@
-# Flutter Custom Icons (iconixto)
+# Flutter Custom Icons
 
-Curated free SVG icons as a lightweight Flutter font pack — scalable, themeable, zero bloat.
+Curated free SVG icons as lightweight Flutter font packs — scalable, themeable, zero bloat.
 
 ## Features
 
 - ✅ **100% Free Icons** - Curated from popular open-source icon sets
-- ✅ **Lightweight** - Single `.ttf` font file, no bloat
+- ✅ **Lightweight** - Bundled `.ttf` font files, no bloat
 - ✅ **Scalable** - Vector icons that look sharp at any size
 - ✅ **Themeable** - Use with Flutter's `Icon` widget, supports color and size customization
-- ✅ **Easy to Use** - Simple API: `Icon(Iconixto.iconName)`
+- ✅ **Easy to Use** - Simple APIs: `Icon(Iconixto.iconName)` and `Icon(FeatherIcons.name)`
 - ✅ **Easy to Extend** - Add more icons with a single command
+  
+Included icon families:
+
+- Iconixto (custom curated set; generated from `assets/icons/`)
+- Feather Icons (pre-bundled classic set)
 
 ## Installation
 
-Add this to your package's `pubspec.yaml` file:
+Add this to your app's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
@@ -34,10 +39,10 @@ Import the package in your Dart code:
 import 'package:flutter_custom_icons/flutter_custom_icons.dart';
 ```
 
-Use the icons in your widgets (Iconixto font):
+Use the icons in your widgets.
 
 ```dart
-// Basic usage
+// Iconixto icons
 Icon(Iconixto.home)
 
 // With size and color
@@ -60,18 +65,38 @@ AppBar(
   title: Text('My App'),
   leading: Icon(Iconixto.home),
 )
+
+// Feather icons
+Icon(FeatherIcons.activity)
 ```
 
-## Available Icons (sampler)
+## Icon Gallery
 
-Current sampler includes (names match `Iconixto.*`):
+Here’s a quick preview of some available icons. Use your IDE’s autocomplete on `Iconixto.` or `FeatherIcons.` to browse the full set.
 
-- `home`, `home2`, `home3`, `home4`
-- `link`, `link1`, `link2`, `link3`
-- `cog1`, `cog2`
-- `zoomPlus`
+### Iconixto (custom curated)
 
-See the [example](example/) folder for a complete demo.
+| Preview | Dart Constant |
+| ------- | ------------- |
+| <img src="https://raw.githubusercontent.com/techwithsam/flutter_custom_icons/main/assets/icons/home.svg" alt="home icon" width="24" style="filter: brightness(0) invert(1);"> | `Iconixto.home` |
+| <img src="https://raw.githubusercontent.com/techwithsam/flutter_custom_icons/main/assets/icons/home2.svg" alt="home2 icon" width="24" style="filter: brightness(0) invert(1);"> | `Iconixto.home2` |
+| <img src="https://raw.githubusercontent.com/techwithsam/flutter_custom_icons/main/assets/icons/link.svg" alt="link icon" width="24" style="filter: brightness(0) invert(1);"> | `Iconixto.link` |
+| <img src="https://raw.githubusercontent.com/techwithsam/flutter_custom_icons/main/assets/icons/link1.svg" alt="link1 icon" width="24" style="filter: brightness(0) invert(1);"> | `Iconixto.link1` |
+| <img src="https://raw.githubusercontent.com/techwithsam/flutter_custom_icons/main/assets/icons/cog1.svg" alt="cog1 icon" width="24" style="filter: brightness(0) invert(1);"> | `Iconixto.cog1` |
+| <img src="https://raw.githubusercontent.com/techwithsam/flutter_custom_icons/main/assets/icons/zoomPlus.svg" alt="zoomPlus icon" width="24" style="filter: brightness(0) invert(1);"> | `Iconixto.zoomPlus` |
+
+### FeatherIcons (classic set)
+
+| Preview | Dart Constant |
+| ------- | ------------- |
+| ![activity](/assets/icons/activity.svg) | `FeatherIcons.activity` |
+| ![airplay](/assets/icons/airplay.svg) | `FeatherIcons.airplay` |
+| ![alert-circle](/assets/icons/alert-circle.svg) | `FeatherIcons.alertCircle` |
+| ![anchor](/assets/icons/anchor.svg) | `FeatherIcons.anchor` |
+| ![book](/assets/icons/book.svg) | `FeatherIcons.book` |
+| ![heart](/assets/icons/heart.svg) | `FeatherIcons.heart` |
+
+See the [example](example/) folder for a running demo and more icons.
 
 ## For Package Maintainers
 
@@ -87,21 +112,21 @@ See the [example](example/) folder for a complete demo.
 node tool/generate_icons.js
 ```
 
-3. **Test the icons** in the example app
+1. **Test the icons** in the example app
 
 ### How It Works
 
 The automation script:
 
 1. Scans all SVG files in `assets/icons/`
-2. Uses [Fantasticon](https://github.com/tancredi/fantasticon) to convert them to a `.ttf` font
-3. Generates a Dart class (`lib/src/iconixto_icons.dart`) with constants mapped to Unicode codepoints
+2. Uses [Fantasticon](https://github.com/tancredi/fantasticon) (via `npx`) to convert them to a `.ttf` font at `assets/fonts/iconixto.ttf`
+3. Generates a Dart class (`lib/src/iconixto_icons.dart`) with constants mapped to Unicode code points
 4. Ensures names are valid Dart identifiers (lowerCamelCase)
 
 ### Requirements
 
 - Node.js (for running the generation script)
-- Fantasticon: `npm install -g fantasticon`
+- Fantasticon is invoked via `npx fantasticon` automatically. Optionally install globally with `npm install -g fantasticon` if you prefer.
 
 ## Contributing
 
