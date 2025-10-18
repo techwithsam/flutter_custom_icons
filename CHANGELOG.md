@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.0.3
+
+* Bug fix for FeatherIcons
+* Added Fluent Icon family to the package
+
 ## 0.0.2
 
 * Enhanced documentation with comprehensive updates
