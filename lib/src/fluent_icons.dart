@@ -5,6 +5,8 @@ class FluentData extends IconData {
     : super(fontFamily: 'fluenticons', fontPackage: 'flutter_custom_icons');
 }
 
+
+/// Fluent Icons Icon Set
 class FluentIcons {
   FluentIcons._();
 

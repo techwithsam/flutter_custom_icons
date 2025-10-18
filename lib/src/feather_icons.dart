@@ -5,6 +5,7 @@ class FeatherIconData extends IconData {
     : super(fontFamily: 'feathericons', fontPackage: 'flutter_custom_icons');
 }
 
+/// Feather Icons Icon Set
 class FeatherIcons {
   FeatherIcons._();
 

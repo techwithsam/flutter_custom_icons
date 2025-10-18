@@ -5,6 +5,7 @@ class IconixtoData extends IconData {
     : super(fontFamily: 'iconixto', fontPackage: 'flutter_custom_icons');
 }
 
+/// Iconixto Icons Icon Set
 class Iconixto {
   Iconixto._();
 

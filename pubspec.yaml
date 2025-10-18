@@ -1,6 +1,6 @@
 name: flutter_custom_icons
 description: "A modern Flutter icon font package—convert SVGs to a single font, use with a generated Dart class, and keep your app lightweight."
-version: 0.0.3
+version: 0.0.4
 homepage: https://github.com/techwithsam
 repository: https://github.com/techwithsam/flutter_custom_icons
 issue_tracker: https://github.com/techwithsam/flutter_custom_icons/issues
