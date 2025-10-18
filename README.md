@@ -1,157 +1,101 @@
 # Flutter Custom Icons
 
-Curated free SVG icons as lightweight Flutter font packs — scalable, themeable, zero bloat.
+<p align="center">
+  <img src="./screenshots/iconixto.png" alt="Iconixto Icons" width="250"/>
+  <img src="./screenshots/feather.png" alt="Feather Icons" width="250"/>
+  <img src="./screenshots/fluent.png" alt="Fluent Icons" width="250"/>
+</p>
 
-## Features
+<p align="center">
+  <b>Curated free icons • Lightweight font packs • Zero bloat</b>
+</p>
 
-- ✅ **100% Free Icons** - Curated from popular open-source icon sets
-- ✅ **Lightweight** - Bundled `.ttf` font files, no bloat
-- ✅ **Scalable** - Vector icons that look sharp at any size
-- ✅ **Themeable** - Use with Flutter's `Icon` widget, supports color and size customization
-- ✅ **Easy to Use** - Simple APIs: `Icon(Iconixto.iconName)` and `Icon(FeatherIcons.name)`
-- ✅ **Easy to Extend** - Add more icons with a single command
-  
-Included icon families:
+<p align="center">
+  <a href="#installation">Installation</a> •
+  <a href="#usage">Usage</a> •
+  <a href="#icon-families">Icon Families</a> •
+  <a href="#examples">Examples</a>
+</p>
 
-- Iconixto (custom curated set; generated from `assets/icons/`)
-- Feather Icons (pre-bundled classic set)
+---
 
-## Installation
+## ✨ Features
 
-Add this to your app's `pubspec.yaml` file:
+- 🎨 **500+ Icons** - Three curated icon families in one package
+- ⚡ **Lightweight** - Bundled as `.ttf` fonts, minimal app size impact
+- 🔥 **Easy to Use** - Simple API: `Icon(Iconixto.home)`, `Icon(FeatherIcons.activity)`, `Icon(FluentIcons.add)`
+- 🎯 **Fully Themeable** - Customize color, size, and styling
+- 📦 **100% Free** - MIT licensed, ready for commercial use
+
+## 📊 Icon Families
+
+| Family | Count | Style | Usage |
+|--------|-------|-------|-------|
+| **Iconixto** | 1500+ | Modern, curated | `Icon(Iconixto.home)` |
+| **FeatherIcons** | 280+ | Classic, minimal | `Icon(FeatherIcons.activity)` |
+| **FluentIcons** | 3000+ | Modern, classic | `Icon(FluentIcons.add)` |
+
+## 📦 Installation
 
 ```yaml
 dependencies:
-  flutter_custom_icons: ^0.0.1
+  flutter_custom_icons: ^0.0.2
 ```
-
-Then run:
 
 ```bash
 flutter pub get
 ```
 
-## Usage
-
-Import the package in your Dart code:
+## 🚀 Usage
 
 ```dart
 import 'package:flutter_custom_icons/flutter_custom_icons.dart';
-```
 
-Use the icons in your widgets.
-
-```dart
-// Iconixto icons
+// Iconixto usage
 Icon(Iconixto.home)
 
-// With size and color
-Icon(
-  Iconixto.link,
-  size: 30,
-  color: Colors.blue,
-)
-
-// In a button
-IconButton(
-  icon: Icon(Iconixto.cog1),
-  onPressed: () {
-    // Handle tap
-  },
-)
-
-// In an app bar
-AppBar(
-  title: Text('My App'),
-  leading: Icon(Iconixto.home),
-)
-
-// Feather icons
+// FeatherIcons usage
 Icon(FeatherIcons.activity)
+
+// Fluent usage
+Icon(FluentIcons.add)
 ```
 
-## Icon Gallery
+## 📸 Examples
 
-Here’s a quick preview of some available icons. Use your IDE’s autocomplete on `Iconixto.` or `FeatherIcons.` to browse the full set.
+Check the [example app](example/) for a complete gallery of all available icons.
 
-### Iconixto (custom curated)
+## 🛠️ Adding New Icons
 
-| Preview | Dart Constant |
-| ------- | ------------- |
-| <img src="https://raw.githubusercontent.com/techwithsam/flutter_custom_icons/main/assets/icons/home.svg" alt="home icon" width="24" style="filter: brightness(0) invert(1);"> | `Iconixto.home` |
-| <img src="https://raw.githubusercontent.com/techwithsam/flutter_custom_icons/main/assets/icons/home2.svg" alt="home2 icon" width="24" style="filter: brightness(0) invert(1);"> | `Iconixto.home2` |
-| <img src="https://raw.githubusercontent.com/techwithsam/flutter_custom_icons/main/assets/icons/link.svg" alt="link icon" width="24" style="filter: brightness(0) invert(1);"> | `Iconixto.link` |
-| <img src="https://raw.githubusercontent.com/techwithsam/flutter_custom_icons/main/assets/icons/link1.svg" alt="link1 icon" width="24" style="filter: brightness(0) invert(1);"> | `Iconixto.link1` |
-| <img src="https://raw.githubusercontent.com/techwithsam/flutter_custom_icons/main/assets/icons/cog1.svg" alt="cog1 icon" width="24" style="filter: brightness(0) invert(1);"> | `Iconixto.cog1` |
-| <img src="https://raw.githubusercontent.com/techwithsam/flutter_custom_icons/main/assets/icons/zoomPlus.svg" alt="zoomPlus icon" width="24" style="filter: brightness(0) invert(1);"> | `Iconixto.zoomPlus` |
-
-### FeatherIcons (classic set)
-
-| Preview | Dart Constant |
-| ------- | ------------- |
-| ![activity](/assets/icons/activity.svg) | `FeatherIcons.activity` |
-| ![airplay](/assets/icons/airplay.svg) | `FeatherIcons.airplay` |
-| ![alert-circle](/assets/icons/alert-circle.svg) | `FeatherIcons.alertCircle` |
-| ![anchor](/assets/icons/anchor.svg) | `FeatherIcons.anchor` |
-| ![book](/assets/icons/book.svg) | `FeatherIcons.book` |
-| ![heart](/assets/icons/heart.svg) | `FeatherIcons.heart` |
-
-See the [example](example/) folder for a running demo and more icons.
-
-## For Package Maintainers
-
-### Adding New Icons
-
-1. **Add SVG files** to `assets/icons/`
-   - Use monochrome SVGs for best results
-   - Sources: [Heroicons](https://heroicons.com/), [Lucide](https://lucide.dev/), [Feather Icons](https://feathericons.com/), etc.
-
-2. **Run the generation script**:
+1. Add SVG files to `assets/icons/`
+1. Run generation script:
 
 ```bash
 node tool/generate_icons.js
 ```
 
-1. **Test the icons** in the example app
+1. Test in the example app
 
-### How It Works
+The script uses [Fantasticon](https://github.com/tancredi/fantasticon) to convert SVGs to `.ttf` font and generates Dart classes automatically.
 
-The automation script:
+## 📝 License
 
-1. Scans all SVG files in `assets/icons/`
-2. Uses [Fantasticon](https://github.com/tancredi/fantasticon) (via `npx`) to convert them to a `.ttf` font at `assets/fonts/iconixto.ttf`
-3. Generates a Dart class (`lib/src/iconixto_icons.dart`) with constants mapped to Unicode code points
-4. Ensures names are valid Dart identifiers (lowerCamelCase)
+MIT License - See [LICENSE](LICENSE) for details.
 
-### Requirements
+Icons sourced from: [Heroicons](https://heroicons.com/), [Lucide](https://lucide.dev/), [Feather Icons](https://feathericons.com/)
 
-- Node.js (for running the generation script)
-- Fantasticon is invoked via `npx fantasticon` automatically. Optionally install globally with `npm install -g fantasticon` if you prefer.
+## 🤝 Contributing
 
-## Contributing
+Contributions welcome! Fork, add your icons, and submit a PR.
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+## 💬 Support
 
-1. Fork the repository
-2. Add your SVG icons to `assets/icons/`
-3. Run `node tool/generate_icons.js`
-4. Submit a PR with your additions
+Issues? Questions? [Open an issue](https://github.com/techwithsam/flutter_custom_icons/issues)
 
-## License
+---
 
-This package is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+<div align="center">
 
-Individual icon sets may have their own licenses. Please check the source of each icon set for specific licensing information.
+Made with ❤️ for the Flutter community
 
-## Icon Sources
-
-Icons in this package are sourced from:
-
-- [Heroicons](https://heroicons.com/) - MIT License
-- [Lucide](https://lucide.dev/) - ISC License
-- [Feather Icons](https://feathericons.com/) - MIT License
-- And other free icon sources
-
-## Support
-
-For issues, questions, or suggestions, please file an issue on [GitHub](https://github.com/techwithsam/flutter_custom_icons/issues).
+</div>

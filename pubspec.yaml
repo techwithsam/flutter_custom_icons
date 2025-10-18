@@ -26,5 +26,8 @@ flutter:
     - family: feathericons
       fonts:
         - asset: assets/fonts/feathericons.ttf
+    - family: fluenticons
+      fonts:
+        - asset: assets/fonts/fluent.ttf
 
 
