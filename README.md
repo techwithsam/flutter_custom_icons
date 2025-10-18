@@ -1,10 +1,8 @@
 # Flutter Custom Icons
 
-<p align="center">
-  <img src="./screenshots/iconixto.png" alt="Iconixto Icons" width="250"/>
-  <img src="./screenshots/feather.png" alt="Feather Icons" width="250"/>
-  <img src="./screenshots/fluent.png" alt="Fluent Icons" width="250"/>
-</p>
+|             Iconixto Icons            |             Feather Icons           |             Fluent Icons           |
+| :----------------------------------: | :----------------------------------: | :----------------------------------: |
+| ![Iconixto Icons](https://github.com/techwithsam/flutter_custom_icons/blob/main/screenshots/iconixto.png) | ![Feather Icons](https://github.com/techwithsam/flutter_custom_icons/blob/main/screenshots/feather.png) | ![Fluent Icons](https://github.com/techwithsam/flutter_custom_icons/blob/main/screenshots/fluent.png) |
 
 <p align="center">
   <b>Curated free icons • Lightweight font packs • Zero bloat</b>
