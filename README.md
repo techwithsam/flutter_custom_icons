@@ -2,7 +2,7 @@
 
 |             Iconixto Icons            |             Feather Icons           |             Fluent Icons           |
 | :----------------------------------: | :----------------------------------: | :----------------------------------: |
-| ![Iconixto Icons](https://github.com/techwithsam/flutter_custom_icons/blob/main/screenshots/iconixto.png) | ![Feather Icons](https://github.com/techwithsam/flutter_custom_icons/blob/main/screenshots/feather.png) | ![Fluent Icons](https://github.com/techwithsam/flutter_custom_icons/blob/main/screenshots/fluent.png) |
+| <a title="Iconixto" href="https://github.com/techwithsam/flutter_custom_icons"><img src="https://raw.githubusercontent.com/techwithsam/flutter_custom_icons/main/screenshots/iconixto.png" width="100%"/></a> | <a title="Feather" href="https://github.com/techwithsam/flutter_custom_icons"><img src="https://raw.githubusercontent.com/techwithsam/flutter_custom_icons/main/screenshots/feather.png" width="100%"/></a> | <a title="Fluent" href="https://github.com/techwithsam/flutter_custom_icons"><img src="https://raw.githubusercontent.com/techwithsam/flutter_custom_icons/main/screenshots/fluent.png" width="100%"/></a> |
 
 <p align="center">
   <b>Curated free icons • Lightweight font packs • Zero bloat</b>
